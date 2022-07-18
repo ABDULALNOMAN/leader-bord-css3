@@ -212,6 +212,5 @@ main{
     } 
     .ratings{
         justify-content: space-between;
-        padding-bottom: 5px;
     }
 }
