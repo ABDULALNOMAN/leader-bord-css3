@@ -52,7 +52,7 @@ main{
     margin-top: 28px;
 }
 
-/* start top-players */
+/* start top-blogs */
 .top-blogs h2{
     margin: 30px 0;
     color: #562EFF;
@@ -78,9 +78,6 @@ main{
 }
 .blog .transform{
     text-transform:lowercase ;
-}
-.blogs .grow{
-    flex: 1.5;
 }
 .content h3{
     font-weight: 500;
@@ -145,6 +142,7 @@ main{
 }
 .ratings .fa-regular{
     margin-right:5px;
+    color: #A2A2A2;
 }
 .ratings .hour{
     font-size: 14px;
@@ -212,5 +210,47 @@ main{
     } 
     .ratings{
         justify-content: space-between;
+    }
+}
+@media screen and (min-width:481px) and (max-width:778px){
+    main{
+        height: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .blogs .blog{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+    }
+    .blog .content{
+        justify-content: center;
+    }
+    .content-height{
+        height: auto;
+    }
+    .lates-course-heading h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .lates-courses{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .lates-course-items{
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+        
+    }
+    .lates-course-items img{
+        height: 50%;
+
+    }
+    .ratings{
+        justify-content: space-around;
     }
 }
